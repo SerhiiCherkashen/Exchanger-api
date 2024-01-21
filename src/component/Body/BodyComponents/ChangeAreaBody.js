@@ -11,7 +11,7 @@ const ChangeAreaBody = () => {
     return result;
   }
   const [side, setSide] = useState(true);
-  const [leftCurrency, setLeftCurrency] = useState("CZK");
+  const [leftCurrency, setLeftCurrency] = useState("UAH");
   const [rightCurrency, setRightCurrency] = useState("USD");
   const [leftValue, setLeftValue] = useState(100);
   const [rightValue, setRightValue] = useState(101);

@@ -8,6 +8,7 @@ const CourseBody = () => {
   const [arr, setArr] = useState([]);
   const arrayCourses = [
     { currency: "USD", a: "UAH/USD", cours: 1 },
+    { currency: "CAD", a: "UAH/CAD", cours: 1 },
     { currency: "EUR", a: "UAH/EUR", cours: 1 },
     { currency: "CZK", a: "UAH/CZK", cours: 1 },
   ];
@@ -29,9 +30,11 @@ const CourseBody = () => {
       let n1 = await courseCurrency(arrayCourses[0].currency);
       let n2 = await courseCurrency(arrayCourses[1].currency);
       let n3 = await courseCurrency(arrayCourses[2].currency);
+      let n4 = await courseCurrency(arrayCourses[3].currency);
       arr123.push(n1.toFixed(2));
       arr123.push(n2.toFixed(2));
       arr123.push(n3.toFixed(2));
+      arr123.push(n4.toFixed(2));
       setArr(arr123);
       seSt(false);
     }
